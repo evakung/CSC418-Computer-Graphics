@@ -1,0 +1,73 @@
+CSC418 - ASSIGNMENT #3 REPORT 
+
+Group : Shuai Ma, Fan-Yi Kung
+
+------------------------------------------Part 1----------------------------------------------
+Ray Casting:
+
+	This was implemented through scene traversal to search for existing ray intersections. 
+	and call the method shadeRay once the world frame is obtained. 
+
+Intersections: 
+
+	1) ray-sphere intersection
+	
+	This function was implemented by applying the quadratic formula to search for existing 
+	points of intersections of the ray onto the sphere. There are multiple conditions that
+	need to be handled, that is, the ray crossing with the sphere, once, twice, or neither
+	(none). 
+
+	In the beginning, a ray intersection object was declared for cases when crosses
+	existed. The object was later then updateded one by one including the intersection
+	point, intersection normal (relative to the vector given from the center)
+
+	2) ray-square intersection
+
+	This function was implemented by obtaining the value of the ray intersection of the
+	unit square. We check whether or not the point lies in the domain/range of the square
+	by projecting its x,y position of light to the xy plane. 
+
+
+Phong Shading: 
+	
+	This function was implemented through theuse of the phone shading formula to calculate
+	the differnt light intensities (ambient, diffuse, specular light). 
+
+
+The part was split into 2 for each member. Since intersections belonged together, we decided to
+split the functions as the intersection group and light group in which one of us took over a
+part among the two and collaberated together at the end to generate the desired outputs. 
+
+
+
+-------------------------------Part 2 Game : "Dodge" -----------------------------------------
+
+
+Dodge the ball game: 
+
+	
+	Instructions: 
+		1) Press Space to begin the game and again to quit the game window. 
+		2) Move with the numberpad with a keyboard (8, 2, 4, 6) to move up, down, left,
+		    and right.
+		3) Dodge all the balls and reach the end!
+
+		Note: To load Dodge, type "make" in the "game" directory to compile, then "dodge"
+		to run the actual game. 
+
+We decided to adopt the structure of assignment 2 for this part. The objective is to move to
+the top of the ramp without getting hit by a ball. We have 10 balls randomly spawning in the
+top section of the ramp. We detect collisions with the player every time we animate the next
+frame. Controls are the numpad numbers, excluding 5 (8, 2, 4, 6 for up, down, left, and right
+and 1, 3, 7, 9 for the diagonals).
+
+-----------------------------------Overall-----------------------------------------------------
+
+Meetups for the assignment and task discussion were very productive and successfull, although
+both members have been bearing with heavy schedules and deadlines, we were able to manage.
+Meetings were extremely efficient and have given us a solid understanding of what we were
+supposed to/assigned to do. Overall the collaberation was decently well. We picked on parts
+based off our strengths and would help each other out if either had questions to ask about
+their part or regarding the assignment. 
+
+
